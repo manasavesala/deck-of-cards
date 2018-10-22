@@ -10,12 +10,8 @@ $(document).ready(function(){
     var deck =[];
     suites.forEach(function(card){
       ranks.forEach(function(number){
-        deck.push(number + " of " + card);
-        var combinedCard = (number + " of " + card);
-          if(deck.length < 52){
-            $(".deck").append("<li>" + combinedCard);
-          }
-      });
+        $(".deck").append("<li>"  +number + " of " + card + "</li>");
+        });
     });
   });
 });
